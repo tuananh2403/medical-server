@@ -1,7 +1,7 @@
 const express = require("express");
 
 const initRoutes = require("./routes");
-const cookieParser = require("cookie-parser");
+// const cookieParser = require("cookie-parser");
 const dbConnect = require("./config/dbconnect");
 const cors = require("cors");
 const app = express();
@@ -12,7 +12,7 @@ app.use(
     methods: ["POST", "PUT", "GET", "DELETE"],
   })
 );
-app.use(cookieParser());
+// app.use(cookieParser());
 const port = 8888;
 app.use(express.json());
 
